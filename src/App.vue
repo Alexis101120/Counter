@@ -1,15 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <Counter title="Entraron" v-bind:start="101"/>
+  <!-- //Este y el de abajo es lo mismo se quita el v-bind y solo se dejan los : -->
+   <!-- <Counter title="Entraron" :start="10"/> -->
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Counter from './components/Counter.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    Counter
   }
 }
 </script>
