@@ -1,7 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
 
-  <Counter title="Entraron" v-bind:start="101"/>
+  <Indecision/>
   <!-- //Este y el de abajo es lo mismo se quita el v-bind y solo se dejan los : -->
    <!-- <Counter title="Entraron" :start="10"/> -->
 
@@ -9,12 +8,12 @@
 
 <script>
 
-import Counter from './components/Counter.vue'
+import Indecision from './components/Indecision.vue'
 
 export default {
   name: 'App',
   components:{
-    Counter
+    Indecision
   }
 }
 </script>
